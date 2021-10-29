@@ -1,0 +1,141 @@
+.navbar-wrapper {
+  padding: 0px 30px;
+  /* margin: 0; */
+  /* height: 10vh; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background: chartreuse; */
+  font-weight: 600;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+.navbar-icon {
+  width: 20%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbar-list {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  font-size: 1.3rem;
+}
+
+.brands {
+  border-bottom: 3px solid blue;
+  height: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.order {
+  height: 100%;
+}
+
+.connections {
+  height: 100%;
+}
+.icon div {
+  margin-right: 10px;
+}
+
+.navbar-select {
+  display: flex;
+  align-items: center;
+}
+/* .navbar-select select {
+  border-radius: 10px;
+  outline: none;
+}
+.navbar-select select:focus {
+  outline: none;
+} */
+.nav-right-image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.navbar-select p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-icon {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-list {
+    /* width: 100%; */
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-list {
+    width: 100%;
+    /* align-items: center; */
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 850px) {
+  .navbar-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+  }
+  .brands {
+    padding-right: 10px;
+  }
+  .icon {
+    padding-right: 10px;
+  }
+  .order {
+    padding-right: 10px;
+  }
+  .connections {
+    padding-right: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
